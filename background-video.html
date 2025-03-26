@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Background Video</title>
+  <link rel="icon" href="./assets/favicon.ico" />
+  <link rel="stylesheet" href="background-video.css" />
+</head>
+
+<body>
+  <main>
+    <h1>
+      video by
+      <a href="https://www.pexels.com/@borja-lopez/" title="Borja López profile" target="_blank">Borja López</a>: Drone
+      Footage of Mussel Rafts
+      <span lang="es" translate="no" title="mussel rafts in galician">('bateas')</span> in the Atlantic Ocean, Galicia
+      (Northwest of Spain)
+    </h1>
+    <video playsinline autoplay loop muted poster="./assets/galician-batea.png" role="none"
+      title="Drone Footage of Mussel Rafts (wooden platforms from which ropes are hung, in this ropes mussels grow hooked to them) in the Atlantic Ocean, Galicia(Northwest of Spain)"
+      id="bateas-video">
+      <source src="./assets/bateas-hd_1920_1080_24fps.mp4" type="video/mp4" />
+    </video>
+    <button id="playPause" aria-controls="bateas-video" data-pause-text="PAUSE video" data-play-text="PLAY video">
+      PAUSE video
+    </button>
+  </main>
+  <script src="background-video.js" defer></script>
+</body>
+
+</html>
